@@ -135,6 +135,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &-7209946974969854361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ba8f001a49afa4ab3be8193c6ebca1, type: 3}
+  m_Name: HTCViveTrackerProfile WSA
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: HTC Vive Tracker Profile
+  version: 0.0.1
+  featureIdInternal: com.massive.openxr.feature.input.htcvivetracker
+  openxrExtensionStrings: XR_HTCX_vive_tracker_interaction
+  company: MASSIVE
+  priority: 0
+  required: 0
 --- !u!114 &-6466753796743408669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +213,26 @@ MonoBehaviour:
   featureIdInternal: com.unity.openxr.feature.input.oculustouch
   openxrExtensionStrings: 
   company: Unity
+  priority: 0
+  required: 0
+--- !u!114 &-4203995471281361350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ba8f001a49afa4ab3be8193c6ebca1, type: 3}
+  m_Name: HTCViveTrackerProfile Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: HTC Vive Tracker Profile
+  version: 0.0.1
+  featureIdInternal: com.massive.openxr.feature.input.htcvivetracker
+  openxrExtensionStrings: XR_HTCX_vive_tracker_interaction
+  company: MASSIVE
   priority: 0
   required: 0
 --- !u!114 &-4087708629588181653
@@ -286,6 +326,7 @@ MonoBehaviour:
   - {fileID: 4600267308420815149}
   - {fileID: -1240782608332739986}
   - {fileID: 2670954936995115846}
+  - {fileID: -7209946974969854361}
   - {fileID: 2785881497600351674}
   - {fileID: -2412028419251889067}
   - {fileID: -8394940279812461082}
@@ -658,6 +699,7 @@ MonoBehaviour:
   - {fileID: -3514651124178906573}
   - {fileID: -6466753796743408669}
   - {fileID: 6703767859968518664}
+  - {fileID: -4203995471281361350}
   - {fileID: 206892069209320414}
   - {fileID: 4731029109018757412}
   - {fileID: -7596557088044774213}
