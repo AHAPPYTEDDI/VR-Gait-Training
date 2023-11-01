@@ -62,7 +62,7 @@ namespace xsens
         public XsStreamReader mvnActors;			//network streamer, which contains all 4 actors' poses
         public int actorID = 1;                     //current actor ID, where 1 is the first streamed character from MVN
 
-        public bool applyRootMotion = true;         //if true, position will be applied to the root (pelvis)
+        public bool applyRootMotion = false;         //if true, position will be applied to the root (pelvis)
 
         public XsProp prop1;
         public XsProp prop2;
