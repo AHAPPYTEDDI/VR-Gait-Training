@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 581d48f7192f9d24f9f6fca65f9f40d3, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 702a0d73adeb00642afd10918f537241, type: 2}
 --- !u!196 &5
 NavMeshSettings:
   serializedVersion: 2
@@ -228,10 +228,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 400028, guid: 6f5ca7c64b27fbc42ae90ccf466b8f92, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 6f5ca7c64b27fbc42ae90ccf466b8f92, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -391,7 +387,7 @@ Light:
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
-  m_InnerSpotAngle: 21.802082
+  m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0

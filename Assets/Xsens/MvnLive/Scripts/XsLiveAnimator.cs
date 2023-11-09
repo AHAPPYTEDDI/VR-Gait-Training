@@ -1158,7 +1158,7 @@ namespace xsens
             }
             else
             {
-                model[0].transform.parent.transform.localPosition = Vector3.zero;
+                //model[0].transform.parent.transform.localPosition = Vector3.zero;
             }
         }
     }//class XsLiveAnimator

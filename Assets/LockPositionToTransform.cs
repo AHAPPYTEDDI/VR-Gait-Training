@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class LockPositionToTransform : MonoBehaviour
 {
-
-    [SerializeField]
-    [Tooltip("Which transform this object should snap to on spawn")]
-    private Transform transformToMatch;
-
-    [SerializeField]
-    [Tooltip("Where this object should spawn relative to the transform")]
-    private Vector3 offset;
-
-    [SerializeField]
-    [Tooltip("How long to wait after spawn before snapping to the target position")]
-    private float delay = 0f;
-
+	[SerializeField]
+	private Transform targetTransform;
+	
+	[SerializeField]
+	private Vector3 positionOffset;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -24,14 +17,10 @@ public class LockPositionToTransform : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        //timeSinceStart += Time.deltaTime;
-       //if (!hasSetTransform && timeSinceStart > delay)
-        //{
-            this.transform.position = transformToMatch.position + offset;
-            this.transform.rotation = transform.rotation;
-        //    hasSetTransform = true;
-        //}
+        Vector3 targetPosition = targetTransform.position + positionOffset;
+		targetPosition.y = positionOffset.y;
+		this.transform.position = targetPosition;
     }
 }
