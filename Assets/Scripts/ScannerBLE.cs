@@ -159,7 +159,7 @@ public class ScannerBLE : MonoBehaviour
 		foreach (var d in devices)
 		{
 			//Debug("Found device: " + d.DeviceName);
-			if (d.DeviceName == tabletName)
+			if (d.DeviceName.Equals(tabletName))
 			{
 				bluetoothHelper.setDeviceName(d.DeviceName);
 				bluetoothHelper.Connect();
