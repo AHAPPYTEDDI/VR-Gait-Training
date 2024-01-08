@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 4289545661
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b0acca41862ee33adb67534a5ef5080d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/Foot_Lv2.png
+- Assets/Prefabs/Foot_Lv2_uv.png
+Dependencies: []

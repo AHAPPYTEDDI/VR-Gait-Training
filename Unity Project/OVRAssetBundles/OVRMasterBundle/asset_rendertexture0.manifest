@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 2885732620
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f66bb4d478161fde641222a73dc57faa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: feaa08ab20190d02d4751c45ba900362
+HashAppended: 0
+ClassTypes:
+- Class: 84
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/SpinaHeatmap/LeftMap.renderTexture
+- Assets/SpinaHeatmap/RightMap.renderTexture
+Dependencies: []

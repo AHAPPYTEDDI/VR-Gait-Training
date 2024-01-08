@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 2124666183
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 464a1c79f44e5c76bd06f03e33d4b84d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8a46f448f8af8a4cd10a179b9e34e25f
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 84
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/SpinaHeatmap/Materials/HeatMap_Left.mat
+- Assets/SpinaHeatmap/Materials/HeatMap_Right.mat
+- Assets/Materials/Default_URP.mat
+- Assets/Materials/Target_Mat.mat
+Dependencies:
+- D:/James/SFTI/GTXR_VR/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/James/SFTI/GTXR_VR/OVRAssetBundles/OVRMasterBundle/asset_rendertexture0
+- D:/James/SFTI/GTXR_VR/OVRAssetBundles/OVRMasterBundle/asset_shader0
