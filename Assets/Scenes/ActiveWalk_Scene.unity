@@ -1909,6 +1909,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 997749223}
     m_Modifications:
+    - target: {fileID: 870870793003784807, guid: a18d61a36a0cf464a9a7b01c934f332c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8438874394997300677, guid: a18d61a36a0cf464a9a7b01c934f332c, type: 3}
       propertyPath: m_Name
       value: Tracker Object (1)

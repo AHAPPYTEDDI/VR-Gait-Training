@@ -205,6 +205,17 @@ public class Lesson : MonoBehaviour
             }
         }
         timeInCurrentStep += Time.deltaTime;
+
+        // timer
+        float satisfactionTime = lessonSteps[currentLessonStep].activities[0].satisfactionTime;
+        if (satisfactionTime != 0)
+        { 
+            string timeColor = timeInCurrentStep > satisfactionTime - 10f ? "#FF0000" : "#FFFFFF";
+            string timeText = $"{timeInCurrentStep:F0} seconds";
+            
+            lessonText.SetText($"{lessonSteps[currentLessonStep].instructions}\n<color={timeColor}>{timeText}</color>");
+        }
+
     }
 
     public void StartLesson()
