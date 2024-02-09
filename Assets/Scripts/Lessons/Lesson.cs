@@ -16,6 +16,17 @@ public class Lesson : MonoBehaviour
     private float fadeSpeed = 5.0f;
     private List<Renderer> transitionScreens; // List of all transition screens in the scene
 
+    public enum VisType {
+        VR,
+        NonVR
+    }
+
+    [SerializeField]
+    [Tooltip("Visualisation Type")]
+    public VisType visType;
+    public GameObject mvnPuppetPrefab;
+
+
     [Tooltip("The time taken for the transition between tutorial steps")]
     public float transitionTime;
 
@@ -190,6 +201,12 @@ public class Lesson : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            StartLesson();
+        }
+        
         if (active && currentLessonStep >= 0)
         {
             lessonTime += Time.deltaTime;
@@ -312,7 +329,15 @@ public class Lesson : MonoBehaviour
         //foreach (Renderer screenRenderer in transitionScreens)
         //    StartCoroutine(FadeObjectOut(screenRenderer));
 
-        SetupLessonStep(index);
+        if (visType == VisType.VR){
+
+            SetupLessonStep(index);
+        }
+        else if(visType == VisType.NonVR)
+        {
+            SetupNonVRLessonStep(index);
+        }
+
         lessonSteps[index].StartStep();
         firstLessonStep = false;
 
@@ -426,6 +451,49 @@ public class Lesson : MonoBehaviour
         lessonLog.WriteLine("");
     }
 
+    public void SetupNonVRLessonStep(int index)
+    {
+        // Set the instruction text
+        lessonText.SetText(lessonSteps[index].instructions);
+
+        // Copy the active object list to avoid race condition errors
+        List<GameObject> activeObjList = new List<GameObject>();
+        activeObjList.AddRange(activeObjects);
+
+        // Remove any objects we don't need anymore
+        if (activeObjects != null)
+        {
+            foreach (GameObject stepObject in lessonSteps[index].lessonStepObjects)
+                if (stepObject != null && !activeObjList.Contains(stepObject))
+                {
+                    activeObjList.Add(stepObject);
+                    // stepObject.SetActive(true);
+                    stepObject.transform.position = new Vector3(-1.35f, -0.80f, 1.75f);
+                }
+            activeObjects.Clear();
+            activeObjects.AddRange(activeObjList);
+        }
+
+        InitializeVideoActivities(index);
+
+        if (Application.isPlaying)
+        {
+            // Set up the skybox //TODO: Fix messy branches
+            if (lessonSteps[index].usesDefaultVideoMesh)
+            {   
+                // If we found a video, pause the default one
+                Debug.Log("Lesson has a video");
+                if (defaultOutputMesh)
+                    StartCoroutine(FadeObjectIn(defaultOutputMesh));
+            }
+            else
+            {
+                // Go back to the original skybox
+                Debug.Log("No video, no default video. Changing back to default.");
+                StartCoroutine(FadeObjectOut(defaultOutputMesh));
+            }
+        }
+    }
 
     /// <summary>
     /// Sets up the environment for the given lesson step, including setting the instruction text and

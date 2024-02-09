@@ -119,6 +119,8 @@ public class LessonEditor : Editor
         var eventFoldout = serializedObject.FindProperty("eventFoldout");
 
         // Generic Settings
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("visType"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("mvnPuppetPrefab"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("transitionTime"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("objectParentTransform"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("playOnAwake"));
