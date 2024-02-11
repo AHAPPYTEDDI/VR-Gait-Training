@@ -251,7 +251,6 @@ public class Lesson : MonoBehaviour
         foreach (GameObject activeObject in activeObjects)
             activeObject.SetActive(false);
         activeObjects.Clear();
-        mvnPuppetPrefab.SetActive(false);
 
         // If there's a default video start playing it
         /*if (videoPlayer != null && defaultVideo != null)
@@ -326,6 +325,7 @@ public class Lesson : MonoBehaviour
     private void StartLessonStep(int index)
     {
         Debug.Log("Starting step " + index);
+        mvnPuppetPrefab.SetActive(false);
         // Fade out all transition screens
         //foreach (Renderer screenRenderer in transitionScreens)
         //    StartCoroutine(FadeObjectOut(screenRenderer));
@@ -337,6 +337,7 @@ public class Lesson : MonoBehaviour
         else if(visType == VisType.NonVR)
         {
             SetupNonVRLessonStep(index);
+
         }
 
         lessonSteps[index].StartStep();
@@ -463,11 +464,12 @@ public class Lesson : MonoBehaviour
             if (stepObject != null)
             {
                 string animationName = stepObject.name;
+                Debug.Log("Stepname: "+ animationName);
                 Animator mvnPrefabAnimator = mvnPuppetPrefab.transform.Find("MvnPrefab").GetComponent<Animator>();
                 List<string> validAnimationNames = new List<string>
                 {
                     "Seated Marching",
-                    "SeatedHealRaises",
+                    "SeatedHeelRaises", 
                     "ChangeofPosition",
                     "FlamingoStandLeft",
                     "FlamingoStandRight",
@@ -479,6 +481,7 @@ public class Lesson : MonoBehaviour
                 {
                     // Play the animation
                     mvnPuppetPrefab.SetActive(true);
+                    mvnPuppetPrefab.transform.position = new Vector3(3.31f, 2.5f, 3.23f);
                     mvnPrefabAnimator.Play(animationName);
                 }
             }

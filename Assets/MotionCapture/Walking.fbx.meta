@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 6201508282091583193
-    second: Walking
+    second: Walking2
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -39,7 +39,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walking
+      name: Walking2
       takeName: New Session-007
       internalID: 0
       firstFrame: 0
