@@ -251,6 +251,7 @@ public class Lesson : MonoBehaviour
         foreach (GameObject activeObject in activeObjects)
             activeObject.SetActive(false);
         activeObjects.Clear();
+        mvnPuppetPrefab.SetActive(false);
 
         // If there's a default video start playing it
         /*if (videoPlayer != null && defaultVideo != null)
@@ -456,23 +457,35 @@ public class Lesson : MonoBehaviour
         // Set the instruction text
         lessonText.SetText(lessonSteps[index].instructions);
 
-        // Copy the active object list to avoid race condition errors
-        List<GameObject> activeObjList = new List<GameObject>();
-        activeObjList.AddRange(activeObjects);
-
-        // Remove any objects we don't need anymore
-        if (activeObjects != null)
+        if (lessonSteps[index].lessonStepObjects.Count > 0)
         {
-            foreach (GameObject stepObject in lessonSteps[index].lessonStepObjects)
-                if (stepObject != null && !activeObjList.Contains(stepObject))
+            GameObject stepObject = lessonSteps[index].lessonStepObjects[0];
+            if (stepObject != null)
+            {
+                string animationName = stepObject.name;
+                Animator mvnPrefabAnimator = mvnPuppetPrefab.transform.Find("MvnPrefab").GetComponent<Animator>();
+                List<string> validAnimationNames = new List<string>
                 {
-                    activeObjList.Add(stepObject);
-                    // stepObject.SetActive(true);
-                    stepObject.transform.position = new Vector3(-1.35f, -0.80f, 1.75f);
+                    "Seated Marching",
+                    "SeatedHealRaises",
+                    "ChangeofPosition",
+                    "FlamingoStandLeft",
+                    "FlamingoStandRight",
+                    "Walking",
+                    "StandingHeelRaise"
+                };
+
+                if (mvnPrefabAnimator != null && validAnimationNames.Contains(animationName))
+                {
+                    // Play the animation
+                    mvnPuppetPrefab.SetActive(true);
+                    mvnPrefabAnimator.Play(animationName);
                 }
-            activeObjects.Clear();
-            activeObjects.AddRange(activeObjList);
+            }
         }
+
+
+        
 
         InitializeVideoActivities(index);
 

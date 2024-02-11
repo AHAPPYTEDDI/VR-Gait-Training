@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -8024708573558247244
-    second: Flamingo Stand Right
+    second: FlamingoStandRight
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -39,7 +39,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Flamingo Stand Right
+      name: FlamingoStandRight
       takeName: New Session-002
       internalID: 0
       firstFrame: 0

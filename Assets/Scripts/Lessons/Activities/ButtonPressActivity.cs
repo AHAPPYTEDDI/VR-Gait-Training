@@ -45,7 +45,7 @@ public class ButtonPressActivity : LessonStepActivity
 
     public override bool IsConditionSatisfied()
     {
-        return buttonClicked;
+        return buttonClicked || Input.GetKeyDown(KeyCode.N);;
     }
 
     private void OnButtonClicked()
