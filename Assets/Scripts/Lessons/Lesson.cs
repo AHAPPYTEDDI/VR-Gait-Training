@@ -118,6 +118,17 @@ public class Lesson : MonoBehaviour
     private float timeInCurrentStep = 0f;
     private float videoRewindThreshold = 1f;
 
+    List<string> animationNames = new List<string>
+    {
+        "Seated Marching",
+        "SeatedHeelRaises", 
+        "ChangeofPosition",
+        "FlamingoStandLeft",
+        "FlamingoStandRight",
+        "Walking",
+        "StandingHeelRaise"
+    };
+
     public bool isPausable { 
         get 
         {
@@ -332,7 +343,7 @@ public class Lesson : MonoBehaviour
 
         if (visType == VisType.VR){
 
-            SetupLessonStep(index);
+            SetupVRLessonStep(index);
         }
         else if(visType == VisType.NonVR)
         {
@@ -464,22 +475,11 @@ public class Lesson : MonoBehaviour
             if (stepObject != null)
             {
                 string animationName = stepObject.name;
-                Debug.Log("Stepname: "+ animationName);
                 Animator mvnPrefabAnimator = mvnPuppetPrefab.transform.Find("MvnPrefab").GetComponent<Animator>();
-                List<string> validAnimationNames = new List<string>
-                {
-                    "Seated Marching",
-                    "SeatedHeelRaises", 
-                    "ChangeofPosition",
-                    "FlamingoStandLeft",
-                    "FlamingoStandRight",
-                    "Walking",
-                    "StandingHeelRaise"
-                };
+                
 
-                if (mvnPrefabAnimator != null && validAnimationNames.Contains(animationName))
+                if (mvnPrefabAnimator != null && animationNames.Contains(animationName))
                 {
-                    // Play the animation
                     mvnPuppetPrefab.SetActive(true);
                     mvnPuppetPrefab.transform.position = new Vector3(3.31f, 2.5f, 3.23f);
                     mvnPrefabAnimator.Play(animationName);
@@ -510,6 +510,50 @@ public class Lesson : MonoBehaviour
             }
         }
     }
+
+
+    public void SetupVRLessonStep(int index)
+    {
+        // Set the instruction text
+        lessonText.SetText(lessonSteps[index].instructions);
+
+        if (lessonSteps[index].lessonStepObjects.Count > 0)
+        {
+            GameObject stepObject = lessonSteps[index].lessonStepObjects[0];
+            if (stepObject != null)
+            {
+                string animationName = stepObject.name;
+                Animator mvnPrefabAnimator = mvnPuppetPrefab.transform.Find("MvnPrefab").GetComponent<Animator>();
+                
+
+                if (mvnPrefabAnimator != null && animationNames.Contains(animationName))
+                {
+                    mvnPuppetPrefab.SetActive(true);
+                    mvnPuppetPrefab.transform.position = new Vector3(3.31f, 2.5f, 3.23f);
+                    mvnPrefabAnimator.Play(animationName);
+                }
+            }
+        }
+
+        InitializeVideoActivities(index);
+
+        if (Application.isPlaying)
+        {
+            if (lessonSteps[index].usesDefaultVideoMesh)
+            {   
+                Debug.Log("Lesson has a video");
+                if (defaultOutputMesh)
+                    StartCoroutine(FadeObjectIn(defaultOutputMesh));
+            }
+            else
+            {
+                // Go back to the original skybox
+                Debug.Log("No video, no default video. Changing back to default.");
+                StartCoroutine(FadeObjectOut(defaultOutputMesh));
+            }
+        }
+    }
+
 
     /// <summary>
     /// Sets up the environment for the given lesson step, including setting the instruction text and
