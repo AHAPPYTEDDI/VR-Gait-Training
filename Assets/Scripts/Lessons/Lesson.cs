@@ -128,6 +128,7 @@ public class Lesson : MonoBehaviour
         "Walking",
         "StandingHeelRaise"
     };
+    Vector3 mvnPuppetPrefabInitPos;
 
     public bool isPausable { 
         get 
@@ -198,6 +199,8 @@ public class Lesson : MonoBehaviour
             lessonLog = new StreamWriter($"/mnt/sdcard/{logDirectory}/{LogInfo.Instance.LogFolder}/{filename}");
             submittedAnswers = new List<string>();
         }
+
+        mvnPuppetPrefabInitPos = mvnPuppetPrefab.transform.position;
 
         if (playOnAwake)
             StartCoroutine(WaitForLessonStart(2));
@@ -481,7 +484,7 @@ public class Lesson : MonoBehaviour
                 if (mvnPrefabAnimator != null && animationNames.Contains(animationName))
                 {
                     mvnPuppetPrefab.SetActive(true);
-                    mvnPuppetPrefab.transform.position = new Vector3(3.31f, 2.5f, 3.23f);
+                    mvnPuppetPrefab.transform.position = mvnPuppetPrefabInitPos;
                     mvnPrefabAnimator.Play(animationName);
                 }
             }
@@ -529,7 +532,7 @@ public class Lesson : MonoBehaviour
                 if (mvnPrefabAnimator != null && animationNames.Contains(animationName))
                 {
                     mvnPuppetPrefab.SetActive(true);
-                    mvnPuppetPrefab.transform.position = new Vector3(3.31f, 2.5f, 3.23f);
+                    mvnPuppetPrefab.transform.position = mvnPuppetPrefabInitPos;
                     mvnPrefabAnimator.Play(animationName);
                 }
             }

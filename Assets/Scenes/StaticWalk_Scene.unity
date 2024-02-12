@@ -11940,7 +11940,7 @@ MonoBehaviour:
     usesDefaultVideoMesh: 0
     timesInStep: 0
   - stepName: Flamingo Stands
-    instructions: 'Stand on your right leg with your left leg bent for about 30 seconds
+    instructions: 'Stand on your one leg with your other leg bent for about 30 seconds
       and then switch to the other foot. Hold onto a chair, counter top, or table
       for safety and stability if you need to.
 
@@ -11965,7 +11965,7 @@ MonoBehaviour:
     activities:
     - rid: 207892946380128279
     enabled: 1
-    foldout: 0
+    foldout: 1
     eventsFoldout: 0
     objectsFoldout: 1
     activitiesFoldout: 1

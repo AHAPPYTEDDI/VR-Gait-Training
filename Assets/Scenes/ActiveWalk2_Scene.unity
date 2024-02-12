@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 721429670}
-  m_IndirectSpecularColor: {r: 0.13768037, g: 0.5618717, b: 0.9463245, a: 1}
+  m_IndirectSpecularColor: {r: 0.13983716, g: 0.563397, b: 0.93843216, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2290,6 +2290,38 @@ MonoBehaviour:
   _headPoseRelativeOffsetRotation: {x: 0, y: 0, z: 0}
   _headPoseRelativeOffsetTranslation: {x: 0, y: 0, z: 0}
   profilerTcpPort: 32419
+  expandMixedRealityCapturePropertySheet: 0
+  enableMixedReality: 0
+  compositionMethod: 0
+  extraHiddenLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  extraVisibleLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  dynamicCullingMask: 1
+  externalCompositionBackdropColorRift: {r: 0, g: 1, b: 0, a: 1}
+  externalCompositionBackdropColorQuest: {r: 0, g: 0, b: 0, a: 0}
+  capturingCameraDevice: 0
+  flipCameraFrameHorizontally: 0
+  flipCameraFrameVertically: 0
+  handPoseStateLatency: 0
+  sandwichCompositionRenderLatency: 0
+  sandwichCompositionBufferedFrames: 8
+  chromaKeyColor: {r: 0, g: 1, b: 0, a: 1}
+  chromaKeySimilarity: 0.6
+  chromaKeySmoothRange: 0.03
+  chromaKeySpillRange: 0.06
+  useDynamicLighting: 0
+  depthQuality: 1
+  dynamicLightingSmoothFactor: 8
+  dynamicLightingDepthVariationClampingValue: 0.001
+  virtualGreenScreenType: 0
+  virtualGreenScreenTopY: 10
+  virtualGreenScreenBottomY: -10
+  virtualGreenScreenApplyDepthCulling: 0
+  virtualGreenScreenDepthTolerance: 0.2
+  mrcActivationMode: 0
   _trackingOriginType: 1
   usePositionTracking: 1
   useRotationTracking: 1
@@ -4584,6 +4616,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
+--- !u!1 &545999024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
+  m_PrefabInstance: {fileID: 545999023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &546988474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10400,7 +10437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_Name
-      value: SeatedMarching
+      value: Seated Marching
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_IsActive
@@ -11514,7 +11551,9 @@ MonoBehaviour:
     - {fileID: 1757139879}
     - {fileID: 1392833785}
     - {fileID: 677928486}
-    - {fileID: 760203913}
+    - {fileID: 919132149155446097, guid: 997545af4163fc04c81268c081f919f6, type: 3}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128263
     enabled: 0
@@ -11545,7 +11584,9 @@ MonoBehaviour:
     - {fileID: 1757139879}
     - {fileID: 1392833785}
     - {fileID: 677928486}
-    - {fileID: 760203913}
+    - {fileID: 919132149155446097, guid: 997545af4163fc04c81268c081f919f6, type: 3}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128265
     enabled: 0
@@ -11576,7 +11617,9 @@ MonoBehaviour:
     - {fileID: 1757139879}
     - {fileID: 1392833785}
     - {fileID: 677928486}
-    - {fileID: 760203913}
+    - {fileID: 919132149155446097, guid: 997545af4163fc04c81268c081f919f6, type: 3}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128267
     enabled: 0
@@ -11605,6 +11648,9 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
+    - {fileID: 919132149155446097, guid: 997545af4163fc04c81268c081f919f6, type: 3}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128261
     enabled: 1
@@ -11634,6 +11680,9 @@ MonoBehaviour:
     lessonStepObjects:
     - {fileID: 1757139879}
     - {fileID: 938627358}
+    - {fileID: 919132149155446097, guid: 997545af4163fc04c81268c081f919f6, type: 3}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128269
     enabled: 0
@@ -11686,9 +11735,10 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128272
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 1
     objectsFoldout: 1
@@ -11717,9 +11767,11 @@ MonoBehaviour:
     lessonStepObjects:
     - {fileID: 1757139879}
     - {fileID: 919132149155446097, guid: 5b555d94185f46e4eaf8db43a5545f01, type: 3}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128257
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
@@ -11745,9 +11797,11 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 919132149155446097, guid: 5b555d94185f46e4eaf8db43a5545f01, type: 3}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128273
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
@@ -11775,9 +11829,11 @@ MonoBehaviour:
     lessonStepObjects:
     - {fileID: 1757139879}
     - {fileID: 1392833785}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128274
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
@@ -11802,9 +11858,11 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1392833785}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128275
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
@@ -11830,6 +11888,8 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128259
     enabled: 1
@@ -11860,6 +11920,8 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
+    - {fileID: 938627358}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128276
     enabled: 1
@@ -11887,11 +11949,11 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     lessonStepObjects:
-    - {fileID: 760203913}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128277
     enabled: 1
-    foldout: 0
+    foldout: 1
     eventsFoldout: 0
     objectsFoldout: 1
     activitiesFoldout: 1
@@ -11899,7 +11961,7 @@ MonoBehaviour:
     usesDefaultVideoMesh: 0
     timesInStep: 0
   - stepName: Flamingo Stands
-    instructions: 'Stand on your right leg with your left leg bent for about 30 seconds
+    instructions: 'Stand on your one leg with your other leg bent for about 30 seconds
       and then switch to the other foot. Hold onto a chair, counter top, or table
       for safety and stability if you need to.
 
@@ -11921,6 +11983,8 @@ MonoBehaviour:
     - {fileID: 1757139879}
     - {fileID: 843462569}
     - {fileID: 760203913}
+    - {fileID: 919132149155446097, guid: aedd4ee694302c7458a9ef8682eac838, type: 3}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128279
     enabled: 1
@@ -11949,6 +12013,8 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 919132149155446097, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+    - {fileID: 919132149155446097, guid: aedd4ee694302c7458a9ef8682eac838, type: 3}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128280
     enabled: 1
@@ -11976,6 +12042,8 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 919132149155446097, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+    - {fileID: 919132149155446097, guid: aedd4ee694302c7458a9ef8682eac838, type: 3}
+    - {fileID: 545999024}
     activities:
     - rid: 8409226831030648833
     enabled: 1
@@ -12005,6 +12073,8 @@ MonoBehaviour:
     lessonStepObjects:
     - {fileID: 1757139879}
     - {fileID: 919132149155446097, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+    - {fileID: 919132149155446097, guid: aedd4ee694302c7458a9ef8682eac838, type: 3}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128282
     enabled: 1
@@ -12035,6 +12105,8 @@ MonoBehaviour:
     lessonStepObjects:
     - {fileID: 1757139879}
     - {fileID: 919132149155446097, guid: 6569e44c96b99b5439b92a166fac8fed, type: 3}
+    - {fileID: 919132149155446097, guid: aedd4ee694302c7458a9ef8682eac838, type: 3}
+    - {fileID: 545999024}
     activities:
     - rid: 207892946380128284
     enabled: 1
@@ -12064,6 +12136,8 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 919132149155446097, guid: 6569e44c96b99b5439b92a166fac8fed, type: 3}
+    - {fileID: 919132149155446097, guid: aedd4ee694302c7458a9ef8682eac838, type: 3}
+    - {fileID: 545999024}
     activities:
     - rid: 2402171493818302464
     enabled: 1
@@ -12091,6 +12165,8 @@ MonoBehaviour:
     lessonStepObjects:
     - {fileID: 1757139879}
     - {fileID: 919132149155446097, guid: 6569e44c96b99b5439b92a166fac8fed, type: 3}
+    - {fileID: 919132149155446097, guid: aedd4ee694302c7458a9ef8682eac838, type: 3}
+    - {fileID: 545999024}
     activities:
     - rid: 2402171493818302466
     enabled: 1
@@ -18478,6 +18554,10 @@ PrefabInstance:
     - target: {fileID: 6055195870254398537, guid: e779b08383fa54718b361692d0a07d32, type: 3}
       propertyPath: m_Name
       value: MvnPrefabParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055195870254398537, guid: e779b08383fa54718b361692d0a07d32, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e779b08383fa54718b361692d0a07d32, type: 3}
