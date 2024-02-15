@@ -25,6 +25,7 @@ public class Lesson : MonoBehaviour
     [Tooltip("Visualisation Type")]
     public VisType visType;
     public GameObject mvnPuppetPrefab;
+    public GameObject mvnPuppetAvatar;
 
 
     [Tooltip("The time taken for the transition between tutorial steps")]
@@ -129,6 +130,8 @@ public class Lesson : MonoBehaviour
         "StandingHeelRaise"
     };
     Vector3 mvnPuppetPrefabInitPos;
+    LockPositionToTransform lockPositionToTransform;
+    FollowObject followObject;
 
     public bool isPausable { 
         get 
@@ -344,7 +347,10 @@ public class Lesson : MonoBehaviour
         //foreach (Renderer screenRenderer in transitionScreens)
         //    StartCoroutine(FadeObjectOut(screenRenderer));
 
-        if (visType == VisType.VR){
+        if (visType == VisType.VR)
+        {
+            lockPositionToTransform = mvnPuppetAvatar.GetComponent<LockPositionToTransform>();
+            followObject = mvnPuppetAvatar.GetComponent<FollowObject>();
 
             SetupVRLessonStep(index);
         }
@@ -527,13 +533,28 @@ public class Lesson : MonoBehaviour
             {
                 string animationName = stepObject.name;
                 Animator mvnPrefabAnimator = mvnPuppetPrefab.transform.Find("MvnPrefab").GetComponent<Animator>();
-                
 
                 if (mvnPrefabAnimator != null && animationNames.Contains(animationName))
                 {
                     mvnPuppetPrefab.SetActive(true);
                     mvnPuppetPrefab.transform.position = mvnPuppetPrefabInitPos;
                     mvnPrefabAnimator.Play(animationName);
+
+                    // Follow the user if its walking mode
+                    // if(animationName == "Walking")
+                    // {
+                    //     lockPositionToTransform.enabled = true;
+                    //     followObject.enabled = false;
+                    // }
+                    // else
+                    // {
+                    //     lockPositionToTransform.enabled = false;
+                    //     followObject.enabled = false;
+                    // }
+                }
+                else if(stepObject.name == "OK")
+                {
+                    stepObject.SetActive(true);
                 }
             }
         }
