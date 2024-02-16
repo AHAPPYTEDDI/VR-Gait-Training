@@ -11498,6 +11498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visType: 1
   mvnPuppetPrefab: {fileID: 1297989367}
+  mvnPuppetAvatar: {fileID: 0}
   transitionTime: 0
   objectParentTransform: {fileID: 0}
   playOnAwake: 0
@@ -11818,7 +11819,7 @@ MonoBehaviour:
     - {fileID: 1392833785}
     activities:
     - rid: 207892946380128274
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
@@ -11845,7 +11846,7 @@ MonoBehaviour:
     - {fileID: 1392833785}
     activities:
     - rid: 207892946380128275
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1

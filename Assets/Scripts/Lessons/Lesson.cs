@@ -536,6 +536,7 @@ public class Lesson : MonoBehaviour
 
                 if (mvnPrefabAnimator != null && animationNames.Contains(animationName))
                 {
+                    // GameObject.Find("OK").SetActive(false);
                     mvnPuppetPrefab.SetActive(true);
                     mvnPuppetPrefab.transform.position = mvnPuppetPrefabInitPos;
                     mvnPrefabAnimator.Play(animationName);
@@ -552,10 +553,10 @@ public class Lesson : MonoBehaviour
                     //     followObject.enabled = false;
                     // }
                 }
-                else if(stepObject.name == "OK")
-                {
-                    stepObject.SetActive(true);
-                }
+                // else if(stepObject.name == "OK")
+                // {
+                //     stepObject.SetActive(true);
+                // }
             }
         }
 

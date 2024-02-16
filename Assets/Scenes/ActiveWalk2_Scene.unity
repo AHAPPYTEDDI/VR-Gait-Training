@@ -3229,6 +3229,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 468672, guid: 9de81cb010fadd74c85f793bbb3f6830, type: 3}
   m_PrefabInstance: {fileID: 344124980}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &358720362
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
+      propertyPath: m_Name
+      value: FlamingoStandLeft
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
 --- !u!1001 &368438255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3627,6 +3684,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2749204692117636982, guid: 2c5a11e5a10121f498cdd18701962055, type: 3}
   m_PrefabInstance: {fileID: 445676788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &447418721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
+      propertyPath: m_Name
+      value: FlamingoStandRight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
 --- !u!1001 &447560084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7595,7 +7709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7847,7 +7961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1036908403867293747, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_IsActive
@@ -7995,11 +8109,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
---- !u!1 &760203913 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
-  m_PrefabInstance: {fileID: 760203912}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &764822059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9423,7 +9532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1036908403867293747, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_IsActive
@@ -9539,11 +9648,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
---- !u!1 &843462569 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
-  m_PrefabInstance: {fileID: 843462568}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &843897591
 GameObject:
   m_ObjectHideFlags: 0
@@ -10225,7 +10329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11554,8 +11658,8 @@ MonoBehaviour:
     - {fileID: 677928486}
     - {fileID: 919132149155446097, guid: 997545af4163fc04c81268c081f919f6, type: 3}
     - {fileID: 938627358}
-    - {fileID: 545999024}
     - {fileID: 1571181749}
+    - {fileID: 677928486}
     activities:
     - rid: 207892946380128263
     enabled: 0
@@ -11588,8 +11692,8 @@ MonoBehaviour:
     - {fileID: 677928486}
     - {fileID: 919132149155446097, guid: 997545af4163fc04c81268c081f919f6, type: 3}
     - {fileID: 938627358}
-    - {fileID: 545999024}
     - {fileID: 1571181749}
+    - {fileID: 677928486}
     activities:
     - rid: 207892946380128265
     enabled: 0
@@ -11622,8 +11726,8 @@ MonoBehaviour:
     - {fileID: 677928486}
     - {fileID: 919132149155446097, guid: 997545af4163fc04c81268c081f919f6, type: 3}
     - {fileID: 938627358}
-    - {fileID: 545999024}
     - {fileID: 1571181749}
+    - {fileID: 677928486}
     activities:
     - rid: 207892946380128267
     enabled: 0
@@ -11652,7 +11756,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128261
     enabled: 1
@@ -11682,7 +11785,6 @@ MonoBehaviour:
     lessonStepObjects:
     - {fileID: 1757139879}
     - {fileID: 938627358}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128269
     enabled: 0
@@ -11735,12 +11837,11 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 938627358}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128272
     enabled: 1
     foldout: 0
-    eventsFoldout: 1
+    eventsFoldout: 0
     objectsFoldout: 1
     activitiesFoldout: 1
     hasVideos: 0
@@ -11766,7 +11867,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128257
     enabled: 1
@@ -11783,10 +11883,34 @@ MonoBehaviour:
       the floor and repeat (60 seconds).
     OnStepStarted:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepStopped:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepPaused:
       m_PersistentCalls:
         m_Calls: []
@@ -11794,8 +11918,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     lessonStepObjects:
-    - {fileID: 545999024}
-    - {fileID: 1571181749}
+    - {fileID: 677928486}
     activities:
     - rid: 207892946380128273
     enabled: 1
@@ -11825,10 +11948,9 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128274
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
@@ -11841,10 +11963,34 @@ MonoBehaviour:
       (60 Seconds).'
     OnStepStarted:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepStopped:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepPaused:
       m_PersistentCalls:
         m_Calls: []
@@ -11853,10 +11999,9 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1392833785}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128275
-    enabled: 1
+    enabled: 0
     foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
@@ -11882,7 +12027,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128259
     enabled: 1
@@ -11913,7 +12057,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128276
     enabled: 1
@@ -11930,10 +12073,34 @@ MonoBehaviour:
       the floor and repeat (60 seconds).
     OnStepStarted:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepStopped:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepPaused:
       m_PersistentCalls:
         m_Calls: []
@@ -11942,7 +12109,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 545999024}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128277
     enabled: 1
@@ -11974,7 +12140,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128279
     enabled: 1
@@ -11991,10 +12156,34 @@ MonoBehaviour:
       to.
     OnStepStarted:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepStopped:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepPaused:
       m_PersistentCalls:
         m_Calls: []
@@ -12003,7 +12192,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 919132149155446097, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128280
     enabled: 1
@@ -12020,10 +12208,34 @@ MonoBehaviour:
       to.
     OnStepStarted:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepStopped:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepPaused:
       m_PersistentCalls:
         m_Calls: []
@@ -12032,11 +12244,10 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 919132149155446097, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
-    - {fileID: 1571181749}
     activities:
     - rid: 8409226831030648833
     enabled: 1
-    foldout: 0
+    foldout: 1
     eventsFoldout: 0
     objectsFoldout: 1
     activitiesFoldout: 1
@@ -12061,7 +12272,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 1571181749}
     activities:
     - rid: 207892946380128282
     enabled: 1
@@ -12108,10 +12318,34 @@ MonoBehaviour:
       you covered as much ground as possible in the 2 minutes. '
     OnStepStarted:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepStopped:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1554409429}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnStepPaused:
       m_PersistentCalls:
         m_Calls: []
@@ -12146,12 +12380,11 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 919132149155446097, guid: 6569e44c96b99b5439b92a166fac8fed, type: 3}
     - {fileID: 1571181749}
     activities:
     - rid: 2402171493818302466
     enabled: 1
-    foldout: 0
+    foldout: 1
     eventsFoldout: 0
     objectsFoldout: 1
     activitiesFoldout: 1
@@ -12162,9 +12395,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 1757139879}
-  - {fileID: 843462569}
-  - {fileID: 760203913}
-  - {fileID: 919132149155446097, guid: aedd4ee694302c7458a9ef8682eac838, type: 3}
   references:
     version: 2
     RefIds:
@@ -15992,7 +16222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18491,7 +18721,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6055195870254398534, guid: e779b08383fa54718b361692d0a07d32, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 6055195870254398534, guid: e779b08383fa54718b361692d0a07d32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18568,7 +18798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf5dffaee6fe943409b00814ae815bd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21576,7 +21806,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4490778509227128112, guid: 7026533ae65dd48059c7cd32d671d74b, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 4490778509227128112, guid: 7026533ae65dd48059c7cd32d671d74b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24112,11 +24342,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Stand on your one leg with your other leg bent for about 30 seconds and
-    then switch to the other foot. Hold onto a chair, counter top, or table for safety
-    and stability if you need to.
+  m_text: 'Walking Exercise
 
-    Press ''Ok'' when you''re ready to begin.'
+    Press ''Ok'' to continue'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
