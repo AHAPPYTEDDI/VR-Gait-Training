@@ -12254,6 +12254,31 @@ MonoBehaviour:
     hasVideos: 0
     usesDefaultVideoMesh: 0
     timesInStep: 0
+  - stepName: Flamingo Stand Ready to Switch
+    instructions: Get Ready to Switch
+    OnStepStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStepStopped:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStepPaused:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStepResumed:
+      m_PersistentCalls:
+        m_Calls: []
+    lessonStepObjects: []
+    activities:
+    - rid: 150839130828046337
+    enabled: 1
+    foldout: 1
+    eventsFoldout: 0
+    objectsFoldout: 1
+    activitiesFoldout: 1
+    hasVideos: 0
+    usesDefaultVideoMesh: 0
+    timesInStep: 0
   - stepName: Walking Exercise
     instructions: 'Walking Exercise
 
@@ -12384,7 +12409,7 @@ MonoBehaviour:
     activities:
     - rid: 2402171493818302466
     enabled: 1
-    foldout: 1
+    foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
     activitiesFoldout: 1
@@ -12398,6 +12423,12 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 150839130828046337
+      type: {class: SimpleActivity, ns: , asm: Assembly-CSharp}
+      data:
+        activityType: 0
+        foldout: 1
+        satisfactionTime: 5
     - rid: 207892946380128257
       type: {class: ButtonPressActivity, ns: , asm: Assembly-CSharp}
       data:

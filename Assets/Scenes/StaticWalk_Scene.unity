@@ -11966,7 +11966,7 @@ MonoBehaviour:
     activities:
     - rid: 207892946380128279
     enabled: 1
-    foldout: 1
+    foldout: 0
     eventsFoldout: 0
     objectsFoldout: 1
     activitiesFoldout: 1
@@ -12002,6 +12002,31 @@ MonoBehaviour:
     hasVideos: 0
     usesDefaultVideoMesh: 0
     timesInStep: 0
+  - stepName: Flamingo Stands Ready to Switch
+    instructions: Get Ready to Switch
+    OnStepStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStepStopped:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStepPaused:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStepResumed:
+      m_PersistentCalls:
+        m_Calls: []
+    lessonStepObjects: []
+    activities:
+    - rid: 150839130828046336
+    enabled: 1
+    foldout: 0
+    eventsFoldout: 0
+    objectsFoldout: 1
+    activitiesFoldout: 1
+    hasVideos: 0
+    usesDefaultVideoMesh: 0
+    timesInStep: 0
   - stepName: L Flamingo Stands
     instructions: Stand on your right leg with your left leg bent for 30 seconds
       Hold onto a chair, counter top, or table for safety and stability if you need
@@ -12020,8 +12045,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 919132149155446097, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
-    - {fileID: 83298471}
-    - {fileID: 919132149155446097, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
     activities:
     - rid: 8409226831030648833
     enabled: 1
@@ -12050,8 +12073,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 83298471}
-    - {fileID: 919132149155446097, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
     - {fileID: 919132149155446097, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
     activities:
     - rid: 207892946380128282
@@ -12082,8 +12103,6 @@ MonoBehaviour:
         m_Calls: []
     lessonStepObjects:
     - {fileID: 1757139879}
-    - {fileID: 83298471}
-    - {fileID: 919132149155446097, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
     - {fileID: 919132149155446097, guid: 4f428e3f5dbe0ef4dbce318be52fc9ab, type: 3}
     activities:
     - rid: 207892946380128284
@@ -12154,10 +12173,16 @@ MonoBehaviour:
   activeObjects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 1757139879}
+  - {fileID: 919132149155446097, guid: f1f7397beb6bec54ab87f35c9e4e3b80, type: 3}
   references:
     version: 2
     RefIds:
+    - rid: 150839130828046336
+      type: {class: SimpleActivity, ns: , asm: Assembly-CSharp}
+      data:
+        activityType: 0
+        foldout: 1
+        satisfactionTime: 5
     - rid: 207892946380128257
       type: {class: ButtonPressActivity, ns: , asm: Assembly-CSharp}
       data:
@@ -21021,7 +21046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1757139880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24932,9 +24957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Standing exercises
-
-    Press ''Ok'' to continue'
+  m_text: Get Ready to Switch
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
